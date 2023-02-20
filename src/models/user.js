@@ -20,12 +20,14 @@ const UserSchema = new mongoose.Schema(
         type: String,
         required: true
     },
+    phone_number: {
+      type: String,
+    },
     avatar: {
       type: String
     }
   },
   {
-    // Assigns createdAt and updatedAt fields with a Date type
     timestamps: true
   }
 );
